@@ -19,8 +19,6 @@ password = fake.password(length=8)
 
 class RegisterTest(BaseTest):
 
-    # TODO: sprawdzić też walidacje czy można wpisać różne hasła w polu password i polu confirm
-
     def testEmptyRegister(self):
 
         """
@@ -110,6 +108,56 @@ class RegisterTest(BaseTest):
 
         # 12. Look for "Zip code is required" text for empty Zip Code field alert
         self.assertEqual("Zip Code is required.", self.register_page.get_empty_zipcode_text())
+
+        # 13. Look for "Password confirmation is required." text for empty Confirm field alert
+        self.assertEqual("Password confirmation is required.", self.register_page.get_empty_confirm_text())
+
+    def testMissingConfirmRegister(self):
+
+        """
+        Registering the new account with all fields fulfilled except password confirmation field.
+        :return:
+        """
+
+        # 1. Enter registration page
+        self.home_page.click_register_hyperlink()
+        sleep(2)
+
+        # 2. Enter First Name
+        self.register_page.enter_firstname(firstname)
+
+        # 3. Enter Last Name
+        self.register_page.enter_lastname(lastname)
+
+        # 4. Enter Address
+        self.register_page.enter_address(address)
+
+        # 5. Enter City
+        self.register_page.enter_city(city)
+
+        # 6. Enter State
+        self.register_page.enter_state(state)
+
+        # 7. Enter Zip Code
+        self.register_page.enter_zipcode(zipcode)
+
+        # 8. Enter Phone number
+        self.register_page.enter_phonenumber(phone)
+
+        # 9. Enter SSN
+        self.register_page.enter_ssn(ssn)
+
+        # 10. Enter Username
+        self.register_page.enter_username(username)
+
+        # 11. Enter Password
+        self.register_page.enter_password(password)
+
+        sleep(2)
+
+        # 12. Click on Register button
+        self.register_page.click_register()
+        sleep(2)
 
         # 13. Look for "Password confirmation is required." text for empty Confirm field alert
         self.assertEqual("Password confirmation is required.", self.register_page.get_empty_confirm_text())
