@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81376357-b165-4cd2-8df7-9a634235b8ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <recent name="C:\Users\jacek\OneDrive\Desktop\Projekt\parabank_project\test_data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for login_test.LoginTest.testValidLogin">
+  <component name="RunManager">
     <configuration name="Python tests for login_test.LoginTest.testOnlyPasswordLogin" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
@@ -207,7 +208,7 @@
       <workItem from="1746349147593" duration="33000" />
       <workItem from="1746349186806" duration="264000" />
       <workItem from="1746349454751" duration="21000" />
-      <workItem from="1746349481206" duration="132000" />
+      <workItem from="1746349481206" duration="398000" />
     </task>
     <servers />
   </component>
