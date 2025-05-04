@@ -1,5 +1,4 @@
 from pages.base_page import BasePage
-# from pages.logged_in_page import LoggedInPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -26,10 +25,15 @@ class HomePageLocators:
     # TABS, LEFT TOP OF THE SCREEN
     class TopTabs:
         TOP_ABOUT_US = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[2]/a')
+        TOP_ABOUT_US_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/h1')
         TOP_SERVICES = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[3]/a')
+        TOP_SERVICES_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/span[1]')
         TOP_PRODUCTS = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[4]/a')
+        TOP_PRODUCTS_ASSERT = (By.XPATH, '/html/body/div[5]/header/div/div/div/nav[1]/ul/li[7]/a')
         TOP_LOCATIONS = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[5]/a')
+        TOP_LOCATIONS_ASSERT = (By.XPATH, '/html/body/div[5]/header/div/div/div/nav[1]/ul/li[7]/a')
         TOP_ADMIN_PAGE = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[6]/a')
+        TOP_ADMIN_PAGE_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/h1')
 
     # BUTTONS, RIGHT TOP OF THE SCREEN
     class Buttons:
@@ -193,6 +197,18 @@ class HomePage(BasePage):
         # Find and click on About Us tab
         self.driver.find_element(*HomePageLocators.TopTabs.TOP_ABOUT_US).click()
 
+    def get_about_us_text(self):
+        """
+        About Us page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for About Us page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.TopTabs.TOP_ABOUT_US_ASSERT, "ParaSoft Demo Website"))
+        return self.driver.find_element(*HomePageLocators.TopTabs.TOP_ABOUT_US_ASSERT).text
+
     def click_top_services(self):
         """
         Clicks Services tab
@@ -200,6 +216,18 @@ class HomePage(BasePage):
         """
         # Find and click on Services tab
         self.driver.find_element(*HomePageLocators.TopTabs.TOP_SERVICES).click()
+
+    def get_services_text(self):
+        """
+        Services page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Services page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.TopTabs.TOP_SERVICES_ASSERT, "Available Bookstore SOAP services:"))
+        return self.driver.find_element(*HomePageLocators.TopTabs.TOP_SERVICES_ASSERT).text
 
     def click_top_products(self):
         """
@@ -209,6 +237,18 @@ class HomePage(BasePage):
         # Find and click on Products tab
         self.driver.find_element(*HomePageLocators.TopTabs.TOP_PRODUCTS).click()
 
+    def get_products_text(self):
+        """
+        Products page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Products page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.TopTabs.TOP_PRODUCTS_ASSERT, "Try Parasoft"))
+        return self.driver.find_element(*HomePageLocators.TopTabs.TOP_PRODUCTS_ASSERT).text
+
     def click_top_locations(self):
         """
         Clicks Locations tab
@@ -217,6 +257,18 @@ class HomePage(BasePage):
         # Find and click on Locations tab
         self.driver.find_element(*HomePageLocators.TopTabs.TOP_LOCATIONS).click()
 
+    def get_locations_text(self):
+        """
+        Locations page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Locations page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.TopTabs.TOP_LOCATIONS_ASSERT, "Try Parasoft"))
+        return self.driver.find_element(*HomePageLocators.TopTabs.TOP_LOCATIONS_ASSERT).text
+
     def click_top_admin_page(self):
         """
         Clicks Admin Page tab
@@ -224,6 +276,18 @@ class HomePage(BasePage):
         """
         # Find and click on Admin Page tab
         self.driver.find_element(*HomePageLocators.TopTabs.TOP_ADMIN_PAGE).click()
+
+    def get_admin_page_text(self):
+        """
+        Admin Page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Admin page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.TopTabs.TOP_ADMIN_PAGE_ASSERT, "Administration"))
+        return self.driver.find_element(*HomePageLocators.TopTabs.TOP_ADMIN_PAGE_ASSERT).text
 
 
     def click_home_button(self):
@@ -414,11 +478,3 @@ class HomePage(BasePage):
         """
         # Find and click on Contact Us hyperlink on the bottom of the screen
         self.driver.find_element(*HomePageLocators.BottomTabs.BOTTOM_CONTACT_US).click()
-
-
-    #
-    # def _verify_page(self):
-    #     # TODO:
-    #     print("Landing Page verification")
-    #     assert self.driver.title == "ParaBank"
-    # #     # ... TODO: Więcej...
