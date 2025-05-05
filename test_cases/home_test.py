@@ -3,7 +3,7 @@ from time import sleep
 
 # TODO: wrzucic tutaj testy klikania różnych zakładek na home page
 
-class HomeTopTest(BaseTest):
+class HomeTopTabsTest(BaseTest):
 
     def testAboutUsTab(self):
 
@@ -224,3 +224,177 @@ class HomeOnlineServicesTest(BaseTest):
 
         # Correct id assertion "ATM Services"
         self.assertTrue(self.home_page.get_online_services_id())
+
+class HomeLatestNewsTest(BaseTest):
+
+    def testLNFirstNews(self):
+
+        """
+        Checking in the first news from the top of the ParaBank News
+        :return:
+        """
+
+        # 1. Click on first news hyperlink
+        self.home_page.click_ln_first_news()
+        sleep(2)
+
+        # Correct text assertion "ParaBank News"
+        self.assertEqual("ParaBank News", self.home_page.get_parabank_news_text())
+
+    def testLNSecondNews(self):
+
+        """
+        Checking in the second news from the top of the ParaBank News
+        :return:
+        """
+
+        # 1. Click on second news hyperlink
+        self.home_page.click_ln_second_news()
+        sleep(2)
+
+        # Correct text assertion "ParaBank News"
+        self.assertEqual("ParaBank News", self.home_page.get_parabank_news_text())
+
+    def testLNThirdNews(self):
+
+        """
+        Checking in the third news from the top of the ParaBank News
+        :return:
+        """
+
+        # 1. Click on third news hyperlink
+        self.home_page.click_ln_third_news()
+        sleep(2)
+
+        # Correct text assertion "ParaBank News"
+        self.assertEqual("ParaBank News", self.home_page.get_parabank_news_text())
+
+class HomeReadMoreTest(BaseTest):
+
+    def testReadMoreServices(self):
+
+        """
+        Checking in the Read More button below the Services table
+        :return:
+        """
+
+        # 1. Click on Read More button below the Services table
+        self.home_page.click_read_more_services()
+        sleep(2)
+
+        # Correct text assertion "Available Bookstore SOAP services:"
+        self.assertEqual("Available Bookstore SOAP services:", self.home_page.get_services_text())
+
+    def testReadMoreLatestNews(self):
+
+        """
+        Checking in the Read More button below the Latest News table
+        :return:
+        """
+
+        # 1. Click on Read More button below the Latest News table
+        self.home_page.click_read_more_latest_news()
+        sleep(2)
+
+        # Correct text assertion "ParaBank News"
+        self.assertEqual("ParaBank News", self.home_page.get_parabank_news_text())
+
+class HomeBottomTabsTest(BaseTest):
+
+    def testHomeTab(self):
+
+        """
+        Checking in the Home hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Home hyperlink
+        self.home_page.click_bottom_home()
+        sleep(2)
+
+        # Correct text assertion "ATM Services"
+        self.assertEqual("ATM Services", self.home_page.get_home_button_text())
+
+    def testAboutUsTab(self):
+
+        """
+        Checking in the About Us hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on About Us hyperlink
+        self.home_page.click_bottom_about_us()
+        sleep(2)
+
+        # Correct text assertion "ParaSoft Demo Website"
+        self.assertEqual("ParaSoft Demo Website", self.home_page.get_about_us_text())
+
+    def testServicesTab(self):
+
+        """
+        Checking in the Services hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Services hyperlink
+        self.home_page.click_bottom_services()
+        sleep(2)
+
+        # Correct text assertion "Available Bookstore SOAP services:"
+        self.assertEqual("Available Bookstore SOAP services:", self.home_page.get_services_text())
+
+    def testProductsTab(self):
+
+        """
+        Checking in the Products hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Products hyperlink
+        self.home_page.click_bottom_products()
+        sleep(2)
+
+        # Correct text assertion "Try Parasoft"
+        self.assertEqual("Try Parasoft", self.home_page.get_products_text())
+
+    def testLocationsTab(self):
+
+        """
+        Checking in the Locations hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Locations hyperlink
+        self.home_page.click_bottom_locations()
+        sleep(2)
+
+        # Correct text assertion "Try Parasoft"
+        self.assertEqual("Try Parasoft", self.home_page.get_products_text())
+
+    def testSiteMapTab(self):
+
+        """
+        Checking in the Site Map hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Site Map hyperlink
+        self.home_page.click_bottom_site_map()
+        sleep(2)
+
+        # Correct text assertion "Try Parasoft"
+        self.assertEqual("Solutions", self.home_page.get_site_map_text())
+
+    def testContactUsTab(self):
+
+        """
+        Checking in the Contact Us hyperlink on the bottom of the page
+        :return:
+        """
+
+        # 1. Click on Contact Us hyperlink
+        self.home_page.click_bottom_contact_us()
+        sleep(2)
+
+        # Correct text assertion "Customer Care"
+        self.assertEqual("Customer Care", self.home_page.get_contact_button_text())

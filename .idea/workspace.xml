@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81376357-b165-4cd2-8df7-9a634235b8ee" name="Changes" comment="" />
+    <list default="true" id="81376357-b165-4cd2-8df7-9a634235b8ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/home_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/home_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,11 +66,21 @@
     "Python tests.pytest for home_test.HomeATMServicesTest.executor": "Run",
     "Python tests.pytest for home_test.HomeATMServicesTest.testATMTransferFunds.executor": "Run",
     "Python tests.pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds.executor": "Run",
+    "Python tests.pytest for home_test.HomeBottomTabsTest.testForumTab.executor": "Run",
+    "Python tests.pytest for home_test.HomeBottomTabsTest.testLocationsTab.executor": "Run",
+    "Python tests.pytest for home_test.HomeBottomTabsTest.testSiteMapTab.executor": "Run",
     "Python tests.pytest for home_test.HomeButtonsTest.executor": "Run",
     "Python tests.pytest for home_test.HomeButtonsTest.testAboutUsButton.executor": "Run",
     "Python tests.pytest for home_test.HomeButtonsTest.testAboutUsTab.executor": "Run",
     "Python tests.pytest for home_test.HomeButtonsTest.testContactButton.executor": "Run",
     "Python tests.pytest for home_test.HomeButtonsTest.testHomeButton.executor": "Run",
+    "Python tests.pytest for home_test.HomeLatestNewsTest.executor": "Run",
+    "Python tests.pytest for home_test.HomeLatestNewsTest.testLNFirstNews.executor": "Run",
+    "Python tests.pytest for home_test.HomeOnlineServicesTest.executor": "Run",
+    "Python tests.pytest for home_test.HomeOnlineServicesTest.testOSBillPay.executor": "Run",
+    "Python tests.pytest for home_test.HomeReadMoreTest.executor": "Run",
+    "Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreLatestNews.executor": "Run",
+    "Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreServices.executor": "Run",
     "Python tests.pytest for home_test.HomeTest.testEmptyLogin.executor": "Run",
     "Python tests.pytest for home_test.HomeTopTest.testAdminPageTab.executor": "Run",
     "Python tests.pytest for login_test.LoginTest.testValidLogin.executor": "Run",
@@ -94,8 +108,8 @@
       <recent name="C:\Users\jacek\OneDrive\Desktop\Projekt\parabank_project\test_data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for home_test.HomeOnlineServicesTest">
-    <configuration name="pytest for home_test.HomeATMServicesTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for home_test.HomeBottomTabsTest.testContactUsTab">
+    <configuration name="pytest for home_test.HomeBottomTabsTest.testContactUsTab" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,11 +123,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;home_test.HomeATMServicesTest&quot;" />
+      <option name="_new_target" value="&quot;home_test.HomeBottomTabsTest.testContactUsTab&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for home_test.HomeATMServicesTest.testATMTransferFunds" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for home_test.HomeBottomTabsTest.testForumTab" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,11 +141,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;home_test.HomeATMServicesTest.testATMTransferFunds&quot;" />
+      <option name="_new_target" value="&quot;home_test.HomeBottomTabsTest.testForumTab&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for home_test.HomeBottomTabsTest.testLocationsTab" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,11 +159,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;home_test.HomeATMServicesTest.testATMWithdrawFunds&quot;" />
+      <option name="_new_target" value="&quot;home_test.HomeBottomTabsTest.testLocationsTab&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for home_test.HomeOnlineServicesTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for home_test.HomeBottomTabsTest.testSiteMapTab" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +177,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;home_test.HomeOnlineServicesTest&quot;" />
+      <option name="_new_target" value="&quot;home_test.HomeBottomTabsTest.testSiteMapTab&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for home_test.HomeOnlineServicesTest.testOSBillPay" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for home_test.HomeReadMoreTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,17 +195,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;home_test.HomeOnlineServicesTest.testOSBillPay&quot;" />
+      <option name="_new_target" value="&quot;home_test.HomeReadMoreTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for home_test.HomeOnlineServicesTest" />
-        <item itemvalue="Python tests.pytest for home_test.HomeOnlineServicesTest.testOSBillPay" />
-        <item itemvalue="Python tests.pytest for home_test.HomeATMServicesTest" />
-        <item itemvalue="Python tests.pytest for home_test.HomeATMServicesTest.testATMTransferFunds" />
-        <item itemvalue="Python tests.pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds" />
+        <item itemvalue="Python tests.pytest for home_test.HomeBottomTabsTest.testContactUsTab" />
+        <item itemvalue="Python tests.pytest for home_test.HomeBottomTabsTest.testSiteMapTab" />
+        <item itemvalue="Python tests.pytest for home_test.HomeBottomTabsTest.testForumTab" />
+        <item itemvalue="Python tests.pytest for home_test.HomeBottomTabsTest.testLocationsTab" />
+        <item itemvalue="Python tests.pytest for home_test.HomeReadMoreTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +241,8 @@
       <workItem from="1746350647649" duration="11000" />
       <workItem from="1746350665672" duration="2477000" />
       <workItem from="1746353292788" duration="521000" />
-      <workItem from="1746449926080" duration="4673000" />
+      <workItem from="1746449926080" duration="5136000" />
+      <workItem from="1746466419809" duration="1947000" />
     </task>
     <servers />
   </component>
@@ -237,20 +252,30 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testAboutUsTab.coverage" NAME="pytest for home_test.HomeButtonsTest.testAboutUsTab Coverage Results" MODIFIED="1746451354901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_in_home_test_py.coverage" NAME="pytest in home_test.py Coverage Results" MODIFIED="1746453457716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeTest_testEmptyLogin.coverage" NAME="pytest for home_test.HomeTest.testEmptyLogin Coverage Results" MODIFIED="1746450136421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeATMServicesTest_testATMTransferFunds.coverage" NAME="pytest for home_test.HomeATMServicesTest.testATMTransferFunds Coverage Results" MODIFIED="1746454894320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testContactButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testContactButton Coverage Results" MODIFIED="1746453443615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeBottomTabsTest_testForumTab.coverage" NAME="pytest for home_test.HomeBottomTabsTest.testForumTab Coverage Results" MODIFIED="1746468256674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeATMServicesTest_testATMWithdrawFunds.coverage" NAME="pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds Coverage Results" MODIFIED="1746454818848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testAboutUsButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testAboutUsButton Coverage Results" MODIFIED="1746453259035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeATMServicesTest.coverage" NAME="pytest for home_test.HomeATMServicesTest Coverage Results" MODIFIED="1746455002284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$landing_page.coverage" NAME="landing_page Coverage Results" MODIFIED="1744271375413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_register_test_RegisterTest_testMissingConfirmRegister.coverage" NAME="pytest for register_test.RegisterTest.testMissingConfirmRegister Coverage Results" MODIFIED="1746348816537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeOnlineServicesTest_testOSBillPay.coverage" NAME="pytest for home_test.HomeOnlineServicesTest.testOSBillPay Coverage Results" MODIFIED="1746455362666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeReadMoreTest.coverage" NAME="pytest for home_test.HomeReadMoreTest Coverage Results" MODIFIED="1746467647973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeBottomTabsTest_testLocationsTab.coverage" NAME="pytest for home_test.HomeBottomTabsTest.testLocationsTab Coverage Results" MODIFIED="1746468085566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeOnlineServicesTest.coverage" NAME="pytest for home_test.HomeOnlineServicesTest Coverage Results" MODIFIED="1746455442129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_in_login_test_py.coverage" NAME="pytest in login_test.py Coverage Results" MODIFIED="1746348453773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_in_register_test_py.coverage" NAME="pytest in register_test.py Coverage Results" MODIFIED="1746450142943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeLatestNewsTest.coverage" NAME="pytest for home_test.HomeLatestNewsTest Coverage Results" MODIFIED="1746466892677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeTest_testEmptyLogin.coverage" NAME="pytest for home_test.HomeTest.testEmptyLogin Coverage Results" MODIFIED="1746450136421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testContactButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testContactButton Coverage Results" MODIFIED="1746453443615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeReadMoreTest_testReadMoreLatestNews.coverage" NAME="pytest for home_test.HomeReadMoreTest.testReadMoreLatestNews Coverage Results" MODIFIED="1746467262392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testAboutUsButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testAboutUsButton Coverage Results" MODIFIED="1746453259035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeLatestNewsTest_testLNFirstNews.coverage" NAME="pytest for home_test.HomeLatestNewsTest.testLNFirstNews Coverage Results" MODIFIED="1746466828397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeTopTest_testAdminPageTab.coverage" NAME="pytest for home_test.HomeTopTest.testAdminPageTab Coverage Results" MODIFIED="1746452996506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeReadMoreTest_testReadMoreServices.coverage" NAME="pytest for home_test.HomeReadMoreTest.testReadMoreServices Coverage Results" MODIFIED="1746467220905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeBottomTabsTest_testSiteMapTab.coverage" NAME="pytest for home_test.HomeBottomTabsTest.testSiteMapTab Coverage Results" MODIFIED="1746468386069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testHomeButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testHomeButton Coverage Results" MODIFIED="1746453138739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest.coverage" NAME="pytest for home_test.HomeButtonsTest Coverage Results" MODIFIED="1746451440783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$.coverage" NAME=" Coverage Results" MODIFIED="1746347838060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_login_test_LoginTest_testValidLogin.coverage" NAME="pytest for login_test.LoginTest.testValidLogin Coverage Results" MODIFIED="1746348377206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_in_login_test_py.coverage" NAME="pytest in login_test.py Coverage Results" MODIFIED="1746348453773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_in_register_test_py.coverage" NAME="pytest in register_test.py Coverage Results" MODIFIED="1746450142943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
   </component>
 </project>

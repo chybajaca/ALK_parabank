@@ -64,6 +64,7 @@ class HomePageLocators:
         LN_FIRST_NEWS = (By.XPATH,'//*[@id="rightPanel"]/ul[3]/li[2]/a')
         LN_SECOND_NEWS = (By.XPATH,'//*[@id="rightPanel"]/ul[3]/li[3]/a')
         LN_THIRD_NEWS = (By.XPATH,'//*[@id="rightPanel"]/ul[3]/li[4]/a')
+        LN_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/h1')
 
     # READ MORE BUTTONS
     class ReadMore:
@@ -78,7 +79,11 @@ class HomePageLocators:
         BOTTOM_PRODUCTS = (By.XPATH,'//*[@id="footerPanel"]/ul[1]/li[4]/a')
         BOTTOM_LOCATIONS = (By.XPATH,'//*[@id="footerPanel"]/ul[1]/li[5]/a')
         BOTTOM_FORUM = (By.XPATH,'//*[@id="footerPanel"]/ul[1]/li[6]/a')
+        BOTTOM_FORUM_ASSERT = (By.XPATH,
+                               '//*[@id="app"]/div[3]/div[2]/div/div/div/div/div[2]/'
+                               'div/section/div[2]/div/div/ul/li[1]/a/div/div[2]/h3')
         BOTTOM_SITE_MAP = (By.XPATH,'//*[@id="footerPanel"]/ul[1]/li[7]/a')
+        BOTTOM_SITE_MAP_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/ul[1]/li[1]')
         BOTTOM_CONTACT_US = (By.XPATH,'//*[@id="footerPanel"]/ul[1]/li[8]/a')
 
 class HomePage(BasePage):
@@ -456,6 +461,18 @@ class HomePage(BasePage):
         # Find and click on Third News hyperlink
         self.driver.find_element(*HomePageLocators.LatestNews.LN_THIRD_NEWS).click()
 
+    def get_parabank_news_text(self):
+        """
+        ParaBank News page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for ParaBank News title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.LatestNews.LN_ASSERT, "ParaBank News"))
+        return self.driver.find_element(*HomePageLocators.LatestNews.LN_ASSERT).text
+
 
     def click_read_more_services(self):
         """
@@ -522,6 +539,18 @@ class HomePage(BasePage):
         # Find and click on Forum hyperlink on the bottom of the screen
         self.driver.find_element(*HomePageLocators.BottomTabs.BOTTOM_FORUM).click()
 
+    def get_forum_text(self):
+        """
+        Forum page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Forum page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.BottomTabs.BOTTOM_FORUM_ASSERT, "Product Ideas"))
+        return self.driver.find_element(*HomePageLocators.BottomTabs.BOTTOM_FORUM_ASSERT).text
+
     def click_bottom_site_map(self):
         """
         Clicks Site Map hyperlink
@@ -529,6 +558,18 @@ class HomePage(BasePage):
         """
         # Find and click on Site Map hyperlink on the bottom of the screen
         self.driver.find_element(*HomePageLocators.BottomTabs.BOTTOM_SITE_MAP).click()
+
+    def get_site_map_text(self):
+        """
+        Site Map page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Forum page title
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.BottomTabs.BOTTOM_SITE_MAP_ASSERT, "Solutions"))
+        return self.driver.find_element(*HomePageLocators.BottomTabs.BOTTOM_SITE_MAP_ASSERT).text
 
     def click_bottom_contact_us(self):
         """
