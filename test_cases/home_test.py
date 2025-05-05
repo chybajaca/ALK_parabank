@@ -122,3 +122,61 @@ class HomeButtonsTest(BaseTest):
 
         # Correct text assertion "Customer Care"
         self.assertEqual("Customer Care", self.home_page.get_contact_button_text())
+
+class HomeATMServicesTest(BaseTest):
+
+    def testATMWithdrawFunds(self):
+
+        """
+        Checking in the Withdraw Funds hyperlink
+        :return:
+        """
+
+        # 1. Click on Withdraw Funds hyperlink
+        self.home_page.click_atm_withdraw_funds()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_atm_services_id())
+
+    def testATMTransferFunds(self):
+
+        """
+        Checking in the Transfer Funds hyperlink
+        :return:
+        """
+
+        # 1. Click on Withdraw Funds hyperlink
+        self.home_page.click_atm_transfer_funds()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_atm_services_id())
+
+    def testATMCheckBalances(self):
+
+        """
+        Checking in the Check Balances hyperlink
+        :return:
+        """
+
+        # 1. Click on Check Balances hyperlink
+        self.home_page.click_atm_check_balances()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_atm_services_id())
+
+    def testATMMakeDeposits(self):
+
+        """
+        Checking in the Make Deposits hyperlink
+        :return:
+        """
+
+        # 1. Click on Make Deposits hyperlink
+        self.home_page.click_atm_make_deposits()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_atm_services_id())

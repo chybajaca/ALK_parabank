@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 
 class HomePageLocators:
@@ -49,6 +50,7 @@ class HomePageLocators:
         ATM_TRANSFER_FUNDS = (By.XPATH,'//*[@id="rightPanel"]/ul[1]/li[3]/a')
         ATM_CHECK_BALANCES = (By.XPATH,'//*[@id="rightPanel"]/ul[1]/li[4]/a')
         ATM_MAKE_DEPOSITS = (By.XPATH,'//*[@id="rightPanel"]/ul[1]/li[5]/a')
+        ATM_SERVICES_ASSERT = (By.ID, 'webkit-xml-viewer-source-xml')
 
     # ONLINE SERVICES, MIDDLE OF THE SCREEN
     class OnlineServices:
@@ -372,6 +374,21 @@ class HomePage(BasePage):
         """
         # Find and click on Make Deposits hyperlink
         self.driver.find_element(*HomePageLocators.ATMServices.ATM_MAKE_DEPOSITS).click()
+
+    def get_atm_services_id(self):
+        """
+        ATM Services page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for element present by ID
+
+        try:
+            self.wait_5s.until(EC.presence_of_element_located((By.ID, "webkit-xml-viewer-source-xml")))
+            return True
+        except TimeoutException:
+            return False
 
 
     def click_os_bill_pay(self):
