@@ -180,3 +180,47 @@ class HomeATMServicesTest(BaseTest):
 
         # Correct id assertion "ATM Services"
         self.assertTrue(self.home_page.get_atm_services_id())
+
+class HomeOnlineServicesTest(BaseTest):
+
+    def testOSBillPay(self):
+
+        """
+        Checking in the Bill Pay hyperlink
+        :return:
+        """
+
+        # 1. Click on Bill Pay hyperlink
+        self.home_page.click_os_bill_pay()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_online_services_id())
+
+    def testOSAccountHistory(self):
+
+        """
+        Checking in the Account History hyperlink
+        :return:
+        """
+
+        # 1. Click on Account History hyperlink
+        self.home_page.click_os_account_history()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_online_services_id())
+
+    def testOSTransferFunds(self):
+
+        """
+        Checking in the Transfer Funds hyperlink
+        :return:
+        """
+
+        # 1. Click on Transfer Funds hyperlink
+        self.home_page.click_os_transfer_funds()
+        sleep(2)
+
+        # Correct id assertion "ATM Services"
+        self.assertTrue(self.home_page.get_online_services_id())

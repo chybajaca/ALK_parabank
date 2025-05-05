@@ -57,6 +57,7 @@ class HomePageLocators:
         OS_BILL_PAY = (By.XPATH,'//*[@id="rightPanel"]/ul[2]/li[2]/a')
         OS_ACCOUNT_HISTORY = (By.XPATH,'//*[@id="rightPanel"]/ul[2]/li[3]/a')
         OS_TRANSFER_FUNDS = (By.XPATH,'//*[@id="rightPanel"]/ul[2]/li[4]/a')
+        ONLINE_SERVICES_ASSERT = (By.ID, 'webkit-xml-viewer-source-xml')
 
     # LATEST NEWS, MIDDLE OF THE SCREEN
     class LatestNews:
@@ -414,6 +415,21 @@ class HomePage(BasePage):
         """
         # Find and click on Transfer Funds hyperlink
         self.driver.find_element(*HomePageLocators.OnlineServices.OS_TRANSFER_FUNDS).click()
+
+    def get_online_services_id(self):
+        """
+        Online Services page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for element present by ID
+
+        try:
+            self.wait_5s.until(EC.presence_of_element_located((By.ID, "webkit-xml-viewer-source-xml")))
+            return True
+        except TimeoutException:
+            return False
 
 
     def click_ln_first_news(self):
