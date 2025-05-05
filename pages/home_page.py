@@ -38,8 +38,10 @@ class HomePageLocators:
     # BUTTONS, RIGHT TOP OF THE SCREEN
     class Buttons:
         HOME_BUTTON = (By.XPATH, '//*[@id="headerPanel"]/ul[2]/li[1]/a')
+        HOME_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/ul[1]/li[1]')
         ABOUT_US_BUTTON = (By.XPATH, '//*[@id="headerPanel"]/ul[2]/li[2]/a')
         CONTACT_BUTTON = (By.XPATH, '//*[@id="headerPanel"]/ul[2]/li[3]/a')
+        CONTACT_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/h1')
 
     # ATM SERVICES HYPERLINK, MIDDLE OF THE SCREEN
     class ATMServices:
@@ -298,6 +300,18 @@ class HomePage(BasePage):
         # Find and click on Home button
         self.driver.find_element(*HomePageLocators.Buttons.HOME_BUTTON).click()
 
+    def get_home_button_text(self):
+        """
+        Home Page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Latest News text
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.Buttons.HOME_ASSERT, "ATM Services"))
+        return self.driver.find_element(*HomePageLocators.Buttons.HOME_ASSERT).text
+
     def click_about_us_button(self):
         """
         Clicks About Us button
@@ -313,6 +327,18 @@ class HomePage(BasePage):
         """
         # Find and click on Home button
         self.driver.find_element(*HomePageLocators.Buttons.CONTACT_BUTTON).click()
+
+    def get_contact_button_text(self):
+        """
+        Contact page assertion
+        :return:
+        """
+
+        # While not logged in
+        # Look for Customer Care text
+        self.wait_5s.until(EC.text_to_be_present_in_element
+                           (HomePageLocators.Buttons.CONTACT_ASSERT, "Customer Care"))
+        return self.driver.find_element(*HomePageLocators.Buttons.CONTACT_ASSERT).text
 
 
     def click_atm_withdraw_funds(self):

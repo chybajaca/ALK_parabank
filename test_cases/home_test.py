@@ -1,9 +1,9 @@
 from test_cases.base_test import BaseTest
 from time import sleep
 
-class HomeTest(BaseTest):
+# TODO: wrzucic tutaj testy klikania różnych zakładek na home page
 
-    # TODO: wrzucic tutaj testy klikania różnych zakładek na home page
+class HomeTopTest(BaseTest):
 
     def testAboutUsTab(self):
 
@@ -74,3 +74,51 @@ class HomeTest(BaseTest):
 
         # Correct text assertion "Administration"
         self.assertEqual("Administration", self.home_page.get_admin_page_text())
+
+class HomeButtonsTest(BaseTest):
+
+    def testHomeButton(self):
+
+        """
+        Checking in the Home button for not logged-in user
+        :return:
+        """
+
+        # 1. Click on About Us hyperlink
+        self.home_page.click_top_about_us()
+        sleep(2)
+
+        # 2. Click on Home button
+        self.home_page.click_home_button()
+        sleep(2)
+
+        # Correct text assertion "ATM Services"
+        self.assertEqual("ATM Services", self.home_page.get_home_button_text())
+
+    def testAboutUsButton(self):
+
+        """
+        Checking in the About Us button
+        :return:
+        """
+
+        # 1. Click on About Us button
+        self.home_page.click_about_us_button()
+        sleep(2)
+
+        # Correct text assertion "ParaSoft Demo Website"
+        self.assertEqual("ParaSoft Demo Website", self.home_page.get_about_us_text())
+
+    def testContactButton(self):
+
+        """
+        Checking in the Contact button
+        :return:
+        """
+
+        # 1. Click on Contact button
+        self.home_page.click_contact_button()
+        sleep(2)
+
+        # Correct text assertion "Customer Care"
+        self.assertEqual("Customer Care", self.home_page.get_contact_button_text())
