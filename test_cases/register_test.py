@@ -6,7 +6,7 @@ import csv
 fake = Faker()
 
 firstname = fake.first_name()
-lastname = fake.first_name()
+lastname = fake.last_name()
 address = fake.address()
 city = fake.city()
 state = fake.state()
@@ -168,48 +168,52 @@ class RegisterTest(BaseTest):
         Registering the new account with all fields fulfilled.
         :return:
         """
+        fakefirstname = fake.first_name()
+        fakelastname = fake.last_name()
+        fakepassword = fake.password(length=8)
 
         # 1. Enter registration page
         self.home_page.click_register_hyperlink()
         sleep(2)
 
         # 2. Enter First Name
-        self.register_page.enter_firstname(firstname)
+        self.register_page.enter_firstname(fakefirstname)
 
         # 3. Enter Last Name
-        self.register_page.enter_lastname(lastname)
+        self.register_page.enter_lastname(fakelastname)
 
         # 4. Enter Address
-        self.register_page.enter_address(address)
+        self.register_page.enter_address(fake.address())
 
         # 5. Enter City
-        self.register_page.enter_city(city)
+        self.register_page.enter_city(fake.city())
 
         # 6. Enter State
-        self.register_page.enter_state(state)
+        self.register_page.enter_state(fake.state())
 
         # 7. Enter Zip Code
-        self.register_page.enter_zipcode(zipcode)
+        self.register_page.enter_zipcode(fake.zipcode())
 
         # 8. Enter Phone number
-        self.register_page.enter_phonenumber(phone)
+        self.register_page.enter_phonenumber(fake.phone_number())
 
         # 9. Enter SSN
-        self.register_page.enter_ssn(ssn)
+        self.register_page.enter_ssn(fake.ssn())
 
         # 10. Enter Username
-        self.register_page.enter_username(username)
+        self.register_page.enter_username(fake.user_name())
 
         # 11. Enter Password
-        self.register_page.enter_password(password)
+        self.register_page.enter_password(fakepassword)
 
         # 12. Enter the same password once again
-        self.register_page.enter_confirm(password)
+        self.register_page.enter_confirm(fakepassword)
 
         sleep(2)
 
         # Saving required data to file
-        with open("../test_data/valid_data.csv", mode="a", newline="", encoding="utf-8") as file:
+        with open("C:/Users/jacek/OneDrive/Desktop/Projekt/parabank_project/test_data/valid_data.csv",
+                  mode="a", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow([username, password, firstname, lastname])
 
@@ -219,7 +223,7 @@ class RegisterTest(BaseTest):
 
         # 14. Look for "Welcome <firstname> <lastname>" text
         welcome_text_act = self.logged_page.get_welcome_fullname_text()
-        self.assertEqual(f"Welcome {firstname} {lastname}", welcome_text_act)
+        self.assertEqual(f"Welcome {fakefirstname} {fakelastname}", welcome_text_act)
 
         # 15. Check if LogOut is visible and clickable
         self.logged_page.click_log_out()

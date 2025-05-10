@@ -1,7 +1,6 @@
 from test_cases.base_test import BaseTest
 from time import sleep
 
-# TODO: wrzucic tutaj testy klikania różnych zakładek na home page
 
 class HomeTopTabsTest(BaseTest):
 
@@ -369,7 +368,7 @@ class HomeBottomTabsTest(BaseTest):
         sleep(2)
 
         # Correct text assertion "Try Parasoft"
-        self.assertEqual("Try Parasoft", self.home_page.get_products_text())
+        self.assertEqual("Try Parasoft", self.home_page.get_locations_text())
 
     def testSiteMapTab(self):
 

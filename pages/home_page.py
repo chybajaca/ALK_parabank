@@ -32,7 +32,7 @@ class HomePageLocators:
         TOP_PRODUCTS = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[4]/a')
         TOP_PRODUCTS_ASSERT = (By.XPATH, '/html/body/div[5]/header/div/div/div/nav[1]/ul/li[7]/a')
         TOP_LOCATIONS = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[5]/a')
-        TOP_LOCATIONS_ASSERT = (By.XPATH, '/html/body/div[5]/header/div/div/div/nav[1]/ul/li[7]/a')
+        TOP_LOCATIONS_ASSERT = (By.XPATH, '//*[@id="main_header"]/div[2]/div/nav[2]/ul/li[7]/a')
         TOP_ADMIN_PAGE = (By.XPATH, '//*[@id="headerPanel"]/ul[1]/li[6]/a')
         TOP_ADMIN_PAGE_ASSERT = (By.XPATH, '//*[@id="rightPanel"]/h1')
 
@@ -173,7 +173,7 @@ class HomePage(BasePage):
         #Look for invalid login error
         self.wait_5s.until(EC.text_to_be_present_in_element
                            (HomePageLocators.CustomerLogin.INVALID_LOGIN_CREDENTIALS_ERROR,
-                            "An internal error has occurred and has been logged."))
+                            "The username and password could not be verified."))
         return self.driver.find_element(*HomePageLocators.CustomerLogin.INVALID_LOGIN_CREDENTIALS_ERROR).text
 
     def get_register_text(self):

@@ -1,10 +1,11 @@
 from test_cases.base_test import BaseTest
-from test_data.valid_credentials import DataReader
+from test_data.data_reader import DataReader
 from ddt import data, unpack, ddt
 from time import sleep
 from faker import Faker
 
 @ddt
+
 class LoginTest(BaseTest):
 
     def testEmptyLogin(self):
@@ -39,7 +40,7 @@ class LoginTest(BaseTest):
         sleep(2)
 
         # Correct alert assertion "An internal error has occurred and has been logged."
-        self.assertEqual("An internal error has occurred and has been logged.",
+        self.assertEqual("The username and password could not be verified.",
                          self.home_page.get_log_in_invalid_error())
         sleep(2)
 
@@ -81,9 +82,8 @@ class LoginTest(BaseTest):
                          self.home_page.get_log_in_empty_error())
         sleep(2)
 
-    @data(DataReader.get_csv_data("../test_data/valid_data.csv")[0])
+    @data(*DataReader.get_csv_data("test_data/valid_data.csv"))
     @unpack
-
     def testValidLogin(self, username, password, firstname, lastname):
         """
         Logging in test with usage of valid username and password.
