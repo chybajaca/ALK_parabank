@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81376357-b165-4cd2-8df7-9a634235b8ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/alternative_test_runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/home_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/home_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/login_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_cases/register_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/register_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/valid_credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/data_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/data_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/valid_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/valid_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_running.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_running.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,73 +49,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for login_test.LoginTest.executor": "Run",
-    "Python tests.Python tests for login_test.LoginTest.testEmptyLogin.executor": "Run",
-    "Python tests.Python tests for login_test.LoginTest.testInvalidLogin.executor": "Run",
-    "Python tests.Python tests for login_test.LoginTest.testOnlyPasswordLogin.executor": "Run",
-    "Python tests.Python tests for login_test.LoginTest.testOnlyUsernameLogin.executor": "Run",
-    "Python tests.Python tests for login_test.LoginTest.testValidLogin.executor": "Run",
-    "Python tests.Python tests for login_test.test_login_with_valid_credentials.executor": "Run",
-    "Python tests.Python tests for register_page.HomeTest.testEmptyLogin.executor": "Run",
-    "Python tests.Python tests for register_page.HomeTest.testPartialRegister.executor": "Run",
-    "Python tests.Python tests for register_page.HomeTest.testValidRegister.executor": "Run",
-    "Python tests.Python tests in login_test.py.executor": "Run",
-    "Python tests.Python tests in register_test.py.executor": "Run",
-    "Python tests.pytest for home_test.HomeATMServicesTest.executor": "Run",
-    "Python tests.pytest for home_test.HomeATMServicesTest.testATMTransferFunds.executor": "Run",
-    "Python tests.pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds.executor": "Run",
-    "Python tests.pytest for home_test.HomeBottomTabsTest.testContactUsTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeBottomTabsTest.testForumTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeBottomTabsTest.testLocationsTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeBottomTabsTest.testSiteMapTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeButtonsTest.executor": "Run",
-    "Python tests.pytest for home_test.HomeButtonsTest.testAboutUsButton.executor": "Run",
-    "Python tests.pytest for home_test.HomeButtonsTest.testAboutUsTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeButtonsTest.testContactButton.executor": "Run",
-    "Python tests.pytest for home_test.HomeButtonsTest.testHomeButton.executor": "Run",
-    "Python tests.pytest for home_test.HomeLatestNewsTest.executor": "Run",
-    "Python tests.pytest for home_test.HomeLatestNewsTest.testLNFirstNews.executor": "Run",
-    "Python tests.pytest for home_test.HomeOnlineServicesTest.executor": "Run",
-    "Python tests.pytest for home_test.HomeOnlineServicesTest.testOSBillPay.executor": "Run",
-    "Python tests.pytest for home_test.HomeReadMoreTest.executor": "Run",
-    "Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreLatestNews.executor": "Run",
-    "Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreServices.executor": "Run",
-    "Python tests.pytest for home_test.HomeTest.testEmptyLogin.executor": "Run",
-    "Python tests.pytest for home_test.HomeTopTabsTest.testLocationsTab.executor": "Run",
-    "Python tests.pytest for home_test.HomeTopTest.testAdminPageTab.executor": "Run",
-    "Python tests.pytest for login_test.LoginTest.executor": "Run",
-    "Python tests.pytest for login_test.LoginTest.testInvalidLogin.executor": "Run",
-    "Python tests.pytest for login_test.LoginTest.testValidLogin.executor": "Run",
-    "Python tests.pytest for register_test.RegisterTest.testMissingConfirmRegister.executor": "Run",
-    "Python tests.pytest for register_test.RegisterTest.testValidRegister.executor": "Run",
-    "Python tests.pytest in home_test.py.executor": "Run",
-    "Python tests.pytest in login_test.py.executor": "Run",
-    "Python tests.pytest in register_test.py.executor": "Run",
-    "Python tests.pytest in test_running.py.executor": "Run",
-    "Python.alternative_test_runner.executor": "Run",
-    "Python.landing_page.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/jacek/OneDrive/Desktop/Projekt/parabank_project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for login_test.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.LoginTest.testEmptyLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.LoginTest.testInvalidLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.LoginTest.testOnlyPasswordLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.LoginTest.testOnlyUsernameLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.LoginTest.testValidLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for login_test.test_login_with_valid_credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for register_page.HomeTest.testEmptyLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for register_page.HomeTest.testPartialRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for register_page.HomeTest.testValidRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in login_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in register_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeATMServicesTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeATMServicesTest.testATMTransferFunds.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeATMServicesTest.testATMWithdrawFunds.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeBottomTabsTest.testContactUsTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeBottomTabsTest.testForumTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeBottomTabsTest.testLocationsTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeBottomTabsTest.testSiteMapTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeButtonsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeButtonsTest.testAboutUsButton.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeButtonsTest.testAboutUsTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeButtonsTest.testContactButton.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeButtonsTest.testHomeButton.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeLatestNewsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeLatestNewsTest.testLNFirstNews.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeOnlineServicesTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeOnlineServicesTest.testOSBillPay.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeReadMoreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreLatestNews.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeReadMoreTest.testReadMoreServices.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeTest.testEmptyLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeTopTabsTest.testLocationsTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for home_test.HomeTopTest.testAdminPageTab.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for login_test.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for login_test.LoginTest.testInvalidLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for login_test.LoginTest.testValidLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for register_test.RegisterTest.testMissingConfirmRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for register_test.RegisterTest.testValidRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in home_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in login_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in register_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_running.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.alternative_test_runner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.landing_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacek/OneDrive/Desktop/Projekt/parabank_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacek\OneDrive\Desktop\Projekt\parabank_project\test_data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.pytest for register_test.RegisterTest.testValidRegister">
     <configuration name="pytest for home_test.HomeBottomTabsTest.testLocationsTab" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="parabank_project" />
       <option name="ENV_FILES" value="" />
@@ -256,7 +250,11 @@
       <workItem from="1746353292788" duration="521000" />
       <workItem from="1746449926080" duration="5136000" />
       <workItem from="1746466419809" duration="3979000" />
-      <workItem from="1746860662840" duration="11617000" />
+      <workItem from="1746860662840" duration="11923000" />
+      <workItem from="1746872917943" duration="194000" />
+      <workItem from="1746873225614" duration="10000" />
+      <workItem from="1747927100425" duration="1852000" />
+      <workItem from="1750682798070" duration="295000" />
     </task>
     <servers />
   </component>

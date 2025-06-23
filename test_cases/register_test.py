@@ -2,6 +2,7 @@ from test_cases.base_test import BaseTest
 from time import sleep
 from faker import Faker
 import csv
+import os
 
 fake = Faker()
 
@@ -211,9 +212,19 @@ class RegisterTest(BaseTest):
 
         sleep(2)
 
+        # Define relative directory and filename
+        relative_dir = "test_data"
+        filename = "valid_data.csv"
+
+        # Ensure the directory exists
+        if not os.path.exists(relative_dir):
+            os.makedirs(relative_dir)
+
+        # Construct full file path
+        file_path = os.path.join(relative_dir, filename)
+
         # Saving required data to file
-        with open("C:/Users/jacek/OneDrive/Desktop/Projekt/parabank_project/test_data/valid_data.csv",
-                  mode="a", newline="", encoding="utf-8") as file:
+        with open(file_path, mode="a", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow([username, password, firstname, lastname])
 
