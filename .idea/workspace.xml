@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81376357-b165-4cd2-8df7-9a634235b8ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/data_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/valid_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/valid_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/register_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/register_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/test_data/valid_data.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +254,7 @@
       <workItem from="1746872917943" duration="194000" />
       <workItem from="1746873225614" duration="10000" />
       <workItem from="1747927100425" duration="1852000" />
-      <workItem from="1750682798070" duration="295000" />
+      <workItem from="1750682798070" duration="1579000" />
     </task>
     <servers />
   </component>
@@ -278,7 +278,7 @@
     <SUITE FILE_PATH="coverage/parabank_project$pytest_in_login_test_py.coverage" NAME="pytest in login_test.py Coverage Results" MODIFIED="1746867852775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_in_register_test_py.coverage" NAME="pytest in register_test.py Coverage Results" MODIFIED="1746869600329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeLatestNewsTest.coverage" NAME="pytest for home_test.HomeLatestNewsTest Coverage Results" MODIFIED="1746466892677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
-    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_register_test_RegisterTest_testValidRegister.coverage" NAME="pytest for register_test.RegisterTest.testValidRegister Coverage Results" MODIFIED="1746868993500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/parabank_project$pytest_for_register_test_RegisterTest_testValidRegister.coverage" NAME="pytest for register_test.RegisterTest.testValidRegister Coverage Results" MODIFIED="1750684391649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeTest_testEmptyLogin.coverage" NAME="pytest for home_test.HomeTest.testEmptyLogin Coverage Results" MODIFIED="1746450136421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeTopTabsTest_testLocationsTab.coverage" NAME="pytest for home_test.HomeTopTabsTest.testLocationsTab Coverage Results" MODIFIED="1746862992025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
     <SUITE FILE_PATH="coverage/parabank_project$pytest_for_home_test_HomeButtonsTest_testContactButton.coverage" NAME="pytest for home_test.HomeButtonsTest.testContactButton Coverage Results" MODIFIED="1746453443615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />

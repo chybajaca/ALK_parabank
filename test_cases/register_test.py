@@ -212,16 +212,16 @@ class RegisterTest(BaseTest):
 
         sleep(2)
 
-        # Define relative directory and filename
-        relative_dir = "test_data"
+        # Define directory and filename in the parent project directory
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        data_dir = os.path.join(project_root, "test_data")
         filename = "valid_data.csv"
 
         # Ensure the directory exists
-        if not os.path.exists(relative_dir):
-            os.makedirs(relative_dir)
+        os.makedirs(data_dir, exist_ok=True)
 
         # Construct full file path
-        file_path = os.path.join(relative_dir, filename)
+        file_path = os.path.join(data_dir, filename)
 
         # Saving required data to file
         with open(file_path, mode="a", newline="", encoding="utf-8") as file:
