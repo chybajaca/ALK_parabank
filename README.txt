@@ -53,7 +53,7 @@ Prerequisites
 
     Python 3.12 installed on your machine
     Selenium installed (pip install selenium)
-    Browser WebDriver installed and added to your system PATH (e.g., ChromeDriver)
+    Browser ChromeDriver installed and added to your system PATH
     Internet connection to access the ParaBank website
 
 
@@ -61,7 +61,7 @@ Setup Instructions
 
     1. Clone the repository
 
-    git clone <repository_url>
+    git clone https://github.com/chybajaca/ALK_parabank
     cd parabank_project
 
     2. Install dependencies
@@ -71,7 +71,7 @@ Setup Instructions
 
 
     3. Ensure WebDriver is set up
-    Download the WebDriver matching your browser version and place it in your system PATH or specify its
+    Download the ChromeDriver and place it in your system PATH or specify its
     location in your scripts.
 
 
