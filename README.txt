@@ -9,27 +9,27 @@ Project Overview
 
 Project Structure
 
-parabank_project/
-│
-├── pages/                  # Page Object Model classes
-│   ├── base_page.py        # Base page with common methods
-│   ├── home_page.py        # Home page interactions
-│   ├── logged_page.py      # Logged-in user page interactions
-│   └── register_page.py    # Registration page interactions
-│
-├── test_cases/             # Test scripts
-│   ├── base_test.py        # Base test setup and teardown
-│   ├── home_test.py        # Tests related to home page
-│   ├── login_test.py       # Login functionality tests
-│   └── register_test.py    # Registration functionality tests
-│
-├── test_data/              # Test data and data reader utility
-│   ├── data_reader.py      # Utility to read test data (e.g., CSV)
-│   └── valid_data.csv      # Sample valid test data
-│
-├── test_reports/           # Folder for test reports and logs
-│
-└── test_running.py         # Main script to run tests based on user preferences
+    parabank_project/
+    │
+    ├── pages/                  # Page Object Model classes
+    │   ├── base_page.py        # Base page with common methods
+    │   ├── home_page.py        # Home page interactions
+    │   ├── logged_page.py      # Logged-in user page interactions
+    │   └── register_page.py    # Registration page interactions
+    │
+    ├── test_cases/             # Test scripts
+    │   ├── base_test.py        # Base test setup and teardown
+    │   ├── home_test.py        # Tests related to home page
+    │   ├── login_test.py       # Login functionality tests
+    │   └── register_test.py    # Registration functionality tests
+    │
+    ├── test_data/              # Test data and data reader utility
+    │   ├── data_reader.py      # Utility to read test data (e.g., CSV)
+    │   └── valid_data.csv      # Sample valid test data
+    │
+    ├── test_reports/           # Folder for test reports and logs
+    │
+    └── test_running.py         # Main script to run tests based on user preferences
 
 
 Technologies & Dependencies
