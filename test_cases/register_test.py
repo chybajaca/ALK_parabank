@@ -172,6 +172,7 @@ class RegisterTest(BaseTest):
         fakefirstname = fake.first_name()
         fakelastname = fake.last_name()
         fakepassword = fake.password(length=8)
+        fakeusername = fake.user_name()
 
         # 1. Enter registration page
         self.home_page.click_register_hyperlink()
@@ -202,7 +203,7 @@ class RegisterTest(BaseTest):
         self.register_page.enter_ssn(fake.ssn())
 
         # 10. Enter Username
-        self.register_page.enter_username(fake.user_name())
+        self.register_page.enter_username(fakeusername)
 
         # 11. Enter Password
         self.register_page.enter_password(fakepassword)
@@ -226,7 +227,7 @@ class RegisterTest(BaseTest):
         # Saving required data to file
         with open(file_path, mode="a", newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
-            writer.writerow([username, password, firstname, lastname])
+            writer.writerow([fakeusername, fakepassword, fakefirstname, fakelastname])
 
         # 13. Click on Register button
         self.register_page.click_register()

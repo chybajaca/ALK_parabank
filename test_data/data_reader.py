@@ -16,7 +16,4 @@ class DataReader:
             for row in reader:
                 rows.append(row)
 
-        if not rows:
-            raise ValueError("Plik CSV nie zawiera żadnych danych poza nagłówkiem.")
-
         return [random.choice(rows)]  # returns a list with one random row
